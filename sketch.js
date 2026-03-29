@@ -10,7 +10,7 @@ function setup() {
   for (let i = 0; i < windowWidth+windowHeight; i++) {
     sterne[i] = new Stern();
   }
-  speed = (windowWidth+windowHeight)/270;
+  speed = (windowWidth+windowHeight)/(windowWidth*windowHeight)*0.0618;
 }
 
 function windowResized() {
