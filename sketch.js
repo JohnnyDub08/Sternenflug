@@ -26,7 +26,7 @@ function windowResized() {
 }
 
 function draw() {
-  //speed = 12;
+  speed = 13;
   background(0);
   for (let i = 0; i < sterne.length; i++) {
     sterne[i].update();
