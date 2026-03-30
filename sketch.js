@@ -1,8 +1,9 @@
 let sterne = [];
+
 let speed;
 
 function setup() {
-  setAttributes('antialias', true);
+  //setAttributes('antialias', true);
   canvas = createCanvas(windowWidth, windowHeight, WEBGL)
   canvas.position(0, 0);
   canvas.style('z-index', '-1')
@@ -10,7 +11,7 @@ function setup() {
   for (let i = 0; i < windowWidth+windowHeight; i++) {
     sterne[i] = new Stern();
   }
-  speed = (windowWidth+windowHeight)/(windowWidth*windowHeight)*0.0618;
+  speed = (windowWidth+windowHeight)/270;
 }
 
 function windowResized() {
@@ -25,6 +26,7 @@ function windowResized() {
 }
 
 function draw() {
+  //speed = 12;
   background(0);
   for (let i = 0; i < sterne.length; i++) {
     sterne[i].update();
